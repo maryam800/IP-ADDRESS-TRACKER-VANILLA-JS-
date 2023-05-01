@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+  crossorigin=""></script>
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+  <header id="header">
+    <h1> IP Address Tracker</h1>
+    <div id="form">
+      <input type="text" placeholder="Search for any IP address or domain" id="searchInput">
+      <button id="searchBtn"><img src="images/icon-arrow.svg" alt=""></button>
+    </div>
+  </header>
+  <div class="ip-info-section">
+    <div class="ip-info ip-address">
+      <h5>IP ADDRESS</h5>
+      <p>184.90.5.3</p>
+    </div>
+    <div class="ip-info location">
+      <h5>LOCATION</h5>
+      <p>Brokleyn,NY 1000</p>
+    </div>
+    <div class="ip-info timezone">
+      <h5>TIMEZONE</h5>
+      <p>UTC-05:00</p>
+    </div>
+    <div class="ip-info isp">
+      <h5>ISP</h5>
+      <p>Google</p>
+    </div>
+
+  </div>
+  <div class="map" id="map">
+
+  </div>
+
+
+
+  <script src="main.js"></script>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Maryam Ali 30 April 2023</a>.
+  </div>
+</body>
+</html>
